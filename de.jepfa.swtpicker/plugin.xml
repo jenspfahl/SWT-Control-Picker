@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.bindings">
+      <key
+            commandId="de.jepfa.controlpicker.OpenPicker"
+            contextId="org.eclipse.ui.contexts.dialogAndWindow"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="CTRL+SHIFT+ALT+S">
+      </key>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            defaultHandler="de.jepfa.swtpicker.OpenControlPickerHandler"
+            id="de.jepfa.controlpicker.OpenPicker"
+            name="Open Picker Dialog">
+      </command>
+   </extension>
+
+</plugin>
